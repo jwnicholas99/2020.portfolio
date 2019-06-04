@@ -4,6 +4,8 @@
     border: 0;
     outline: 0;
     font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 @font-face {
     font-family: 'OpenSans-Regular';
@@ -11,6 +13,74 @@
     font-weight: normal;
     font-style: normal;
 }
-.nav {
+html {
     font-family: "OpenSans-Regular";
+    font-weight: 100;
 }
+
+h1 {
+    font-weight: bold;
+    font-size: 100px;
+    color: #585858;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 70px;
+    color: #585858;
+}
+
+p {
+    font-size: 30px;
+    color: #707070;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------Nav--------*/
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    justify-content: space-around;
+}
+
+.pageAnchors .navIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.navIcons {
+    text-align: right;
+}
+
+#LinkedInLogo {
+    width: 50px;
+    height: 50px;
+}
+
+#GithubLogo {
+    width: 45px;
+    height: 45px;
+}
+
+/*--------Projects--------*/
+
+#projectElt1 p{
+    color: #F9A3FF;
+}
+
+#projectElt2 p{
+    color: #A0FF70;
+}
+
+#projectElt3 p{
+    color: #FFA2A2;
+}
+
