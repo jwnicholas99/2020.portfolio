@@ -435,8 +435,30 @@ span {
         margin-top: 90px;
     }
 
+    #introWords{
+        width: 80vw
+    }
+
+    #introHeading{
+        font-size: 50px;
+        align-self: center;
+        width: 80vw;
+    }
+
+    #introPara{
+        font-size: 30px;
+        align-self: center;
+        width: 80vw;
+    }
+
     #profilePic {
         width: 150px;
         height: 150px;
+    }
+
+    .projects .Contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
