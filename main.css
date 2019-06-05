@@ -24,9 +24,14 @@
 
     .intro {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         margin-top: 90px;
+    }
+
+    #profilePic {
+        width: 150px;
+        height: 150px;
     }
 }
 
