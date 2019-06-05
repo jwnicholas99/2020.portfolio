@@ -319,7 +319,7 @@ span {
 .Contact {
     text-align: center;
     margin-top: 2.5%;
-    margin-bottom: 15%;
+    margin-bottom: 14%;
 }
 
 .contactLinks {
@@ -340,29 +340,8 @@ span {
     justify-content: center;
 }
 
-.contactWords {
-    font-size: 17px;
-    font-weight: bold;
-}
-
-#contactResume p{
-    color: #43EEE9;
-}
-
-#contactLinkedIn p{
-    color: #FF8484;
-}
-
-#contactGitHub p{
-    color: #9966FE;
-}
-
-#contactEmail p{
-    color: #EE435F;
-}
-
 #contactResume {
-    border: 6px solid #43EEE9;
+    border: 6px solid #81E2FF;
 }
 
 #contactLinkedIn {
@@ -370,24 +349,65 @@ span {
 }
 
 #contactGitHub {
-     border: 6px solid #9966FE;
+     border: 6px solid #B999F8;
  }
 
 #contactEmail {
-    border: 6px solid #EE435F;
+    border: 6px solid #87F2C7;
 }
 
 #line4{
-    border-bottom: 2px solid #43EEE9;
+    border-bottom: 2px solid #81E2FF;
+    margin-top: 17px;
 }
 #line5{
     border-bottom: 2px solid #FF8484;
+    margin-top: 26px;
 }
 
 #line6{
-    border-bottom: 2px solid #9966FE;
+    border-bottom: 2px solid #B999F8;
+    margin-top: 7px;
 }
 
 #line7{
-    border-bottom: 2px solid #EE435F;
+    border-bottom: 2px solid #87F2C7;
+    margin-top: 27px;
+}
+
+#LinkedInColored {
+    width: 65px;
+    height: 65px;
+    margin-top: 10px;
+}
+
+#GitHubColored {
+    width: 100px;
+    height: 100px;
+    margin-top: -12px;
+}
+
+.contactWords {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#contactResume p{
+    color: #81E2FF;
+    margin-top: 15px;
+}
+
+#contactLinkedIn p{
+    color: #FF8484;
+    margin-top: 20px;
+}
+
+#contactGitHub p{
+    color: #B999F8;
+    margin-top: 15px;
+}
+
+#contactEmail p{
+    color: #87F2C7;
+    margin-top: 15px;
 }
