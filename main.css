@@ -456,7 +456,7 @@ span {
         height: 150px;
     }
 
-    .projects .Contact{
+    .projectLinks .contactLinks{
         display: flex;
         flex-direction: column;
         align-items: center;
