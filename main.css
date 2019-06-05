@@ -4,7 +4,6 @@
     border: 0;
     outline: 0;
     font-size: 100%;
-    vertical-align: baseline;
     background: transparent;
 }
 @font-face {
@@ -18,6 +17,7 @@ html {
     font-weight: 100;
     font-size: 20px;
     color: #707070;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
 
 .sectionHeading {
     font-weight: bold;
-    font-size: 60px;
+    font-size: 50px;
     color: #585858;
 }
 
@@ -55,7 +55,11 @@ a {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+}
+
+.pageAnchors a {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .navIcons {
@@ -99,25 +103,198 @@ a {
     height: 300px;
 }
 
+#scrollDown {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#scrollUp {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #000;
+    transition: 0.4s ease;
+}
+
+#scrollDown1 {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+#scrollDown2 {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+#scrollDown3 {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+#scrollDown4 {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover #scrollDown1 {
+    transform: rotate(-135deg);
+}
+
+.round:hover #scrollDown2 {
+    transform: rotate(135deg);
+}
+
+.round:hover #scrollDown3 {
+    transform: rotate(225deg);
+}
+
+.round:hover #scrollDown4 {
+    transform: rotate(-225deg);
+}
+
+#scrollUp1 {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+#scrollUp2 {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+#scrollUp3 {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+#scrollUp4 {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover #scrollUp1 {
+    transform: rotate(135deg);
+}
+
+.round:hover #scrollUp2 {
+    transform: rotate(-135deg);
+}
+
+.round:hover #scrollUp3 {
+    transform: rotate(-225deg);
+}
+
+.round:hover #scrollUp4 {
+    transform: rotate(225deg);
+}
 
 /*--------Projects--------*/
 .projects {
     text-align: center;
-    margin-top: 17%;
+    margin-top: 2.5%;
+    margin-bottom: 15%;
 }
 
 .projectLinks {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .projectElement {
-    margin: 0px 15px 0px 15px;
+    width: 170px;
+    height: 220px;
+    margin: 0px 30px 0px 30px;
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projectWords {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.projectType {
+    margin-top: 18px;
+}
+
+.projectName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 #projectElt1 {
-    background-color: black;
+    border: 6px solid #F9A3FF;
+}
+
+#projectElt2 {
+    border: 6px solid #A0FF70;
+}
+
+#projectElt3 {
+    border: 6px solid #FFA2A2;
+}
+
+.line{
+    width: 130px;
+    height: 5px;
+}
+
+#line1{
+    border-bottom: 2px solid #F9A3FF;
+}
+#line2{
+    border-bottom: 2px solid #A0FF70;
+}
+#line3{
+    border-bottom: 2px solid #FFA2A2;
 }
 
 #projectElt1 p{
@@ -130,5 +307,9 @@ a {
 
 #projectElt3 p{
     color: #FFA2A2;
+}
+
+#projectElt3 {
+    margin-bottom: -12px;
 }
 

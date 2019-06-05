@@ -8,8 +8,8 @@
 </header>
 <body>
     <div class="nav">
-        <div class="pageAnchors">
-            <a href="#intro">About</a>
+        <div class="pageAnchors" id="topPage">
+            <a href="#topPage">About</a>
             <a href="#projectElt1">Projects</a>
             <a href="#">Contacts</a>
         </div>
@@ -29,22 +29,60 @@
         </div>
         <img id="profilePic" src="images/profile.jpg">
     </div>
+    <div id="scrollDown">
+        <a href = "#projectElt1">
+            <div class="round">
+                <span id="scrollDown1"></span>
+                <span id="scrollDown2"></span>
+                <span id="scrollDown3"></span>
+                <span id="scrollDown4"></span>
+            </div>
+        </a>
+    </div>
+    <div id="scrollUp">
+        <a href = "#topPage">
+            <div class="round">
+                <span id="scrollUp1"></span>
+                <span id="scrollUp2"></span>
+                <span id="scrollUp3"></span>
+                <span id="scrollUp4"></span>
+            </div>
+        </a>
+    </div>
     <div class="projects">
         <h2 class="sectionHeading">Projects</h2>
         <div class="projectLinks">
             <a href="https://jwnicholas99.github.io/">
                 <section class="projectElement" id="projectElt1">
-                    <p>UI/UX</p>
+                    <p class="projectWords projectType">UI/UX</p>
+                    <img src="images/HTMLLogo.png">
+                    <div class="line" id="line1"></div>
+                    <div class="projectName">
+                        <p class="projectWords">HTML/CSS</p>
+                        <p class="projectWords projectLastElt">Website</p>
+                    </div>
                 </section>
             </a>
             <a href="https://jwnicholas99.wixsite.com/foodsearch">
                 <section class="projectElement" id="projectElt2">
-                    <p>API/JavaScript</p>
+                    <p class="projectWords projectType">API/JavaScript</p>
+                    <img src="images/FoodSearchLogo.png">
+                    <div class="line" id="line2"></div>
+                    <div class="projectName">
+                        <p class="projectWords">FoodSearch</p>
+                        <p class="projectWords">Engine</p>
+                    </div>
                 </section>
             </a>
             <a href="https://github.com/jwnicholas99/TaxiApp" class="projectElement">
                 <section class="projectElement" id="projectElt3">
-                    <p>App Development</p>
+                    <p class="projectWords projectType">App Development</p>
+                    <img src="images/TaxiDriverApp.png">
+                    <div class="line" id="line3"></div>
+                    <div class="projectName">
+                        <p class="projectWords">Taxi Driver</p>
+                        <p class="projectWords">App</p>
+                    </div>
                 </section>
             </a>
         </div>
