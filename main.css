@@ -16,22 +16,24 @@
 html {
     font-family: "OpenSans-Regular";
     font-weight: 100;
+    font-size: 20px;
+    color: #707070;
 }
 
 h1 {
     font-weight: bold;
-    font-size: 100px;
+    font-size: 80px;
     color: #585858;
 }
 
-h2 {
+.sectionHeading {
     font-weight: bold;
-    font-size: 70px;
+    font-size: 60px;
     color: #585858;
 }
 
 p {
-    font-size: 30px;
+    font-size: 25px;
     color: #707070;
 }
 
@@ -70,7 +72,53 @@ a {
     height: 45px;
 }
 
+/*--------Intro--------*/
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+#introWords {
+    width: 50%;
+    vertical-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#introPara {
+    margin-top: 15px;
+    width: 87%;
+}
+
+#profilePic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+
 /*--------Projects--------*/
+.projects {
+    text-align: center;
+    margin-top: 17%;
+}
+
+.projectLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projectElement {
+    margin: 0px 15px 0px 15px;
+}
+
+#projectElt1 {
+    background-color: black;
+}
 
 #projectElt1 p{
     color: #F9A3FF;
