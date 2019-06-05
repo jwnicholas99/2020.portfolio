@@ -7,34 +7,6 @@
     background: transparent;
 }
 
-@media screen and (max-width: 1020px){
-    .nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 100px;
-        justify-content: space-between;
-    }
-
-    .pageAnchors a {
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 15px;
-    }
-
-    .intro {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 90px;
-    }
-
-    #profilePic {
-        width: 150px;
-        height: 150px;
-    }
-}
-
 @font-face {
     font-family: 'OpenSans-Regular';
     src: url('fonts/OpenSans-Regular.ttf') format('truetype');
@@ -439,4 +411,32 @@ span {
 #contactEmail p{
     color: #87F2C7;
     margin-top: 15px;
+}
+
+@media screen and (max-width: 1020px){
+    .nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    .pageAnchors a {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 15px;
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 90px;
+    }
+
+    #profilePic {
+        width: 150px;
+        height: 150px;
+    }
 }
