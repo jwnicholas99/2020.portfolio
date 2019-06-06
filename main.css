@@ -420,12 +420,10 @@ span {
         align-items: center;
         height: 100px;
         justify-content: flex-end;
+        margin-right: 30px;
     }
 
     .pageAnchors a {
-        margin-left: 5px;
-        margin-right: 5px;
-        font-size: 15px;
         display: None;
     }
 
@@ -433,7 +431,7 @@ span {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        margin-top: 90px;
+        margin-top: 60px;
     }
 
     #introWords{
