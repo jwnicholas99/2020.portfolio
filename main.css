@@ -42,6 +42,27 @@ a {
     text-decoration: none;
 }
 
+/*-------Background of main--------*/
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background:black;
+    z-index: -1;
+}
+
+/*-------Main--------*/
+.main {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    clip-path: circle(100%);
+}
+
 /*--------Nav--------*/
 .nav {
     display: flex;
