@@ -1,0 +1,653 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "OpenSans-Regular";
+  font-weight: 100;
+  font-size: 20px;
+  color: #707070;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: #585858;
+}
+
+.sectionHeading {
+  font-weight: bold;
+  font-size: 50px;
+  color: #585858;
+}
+
+p {
+  font-size: 25px;
+  color: #707070;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*-------Background of main--------*/
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #40e0d0;
+  z-index: -1;
+}
+
+/*-------Mask of main--------*/
+#main_mask {
+  position: absolute;
+  background: violet;
+}
+
+/*-------Main--------*/
+.main {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  overflow: hidden;
+}
+
+/*--------Nav--------*/
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pageAnchors .navIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pageAnchors a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.navIcons {
+  text-align: right;
+}
+
+#LinkedInLogo {
+  width: 50px;
+  height: 50px;
+}
+
+#GithubLogo {
+  width: 45px;
+  height: 45px;
+}
+
+/*--------Intro--------*/
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 90px;
+}
+
+#introWords {
+  width: 50%;
+  vertical-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#introPara {
+  margin-top: 15px;
+  width: 87%;
+}
+
+#profilePic {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.scrollDown {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.scrollUp {
+  margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.round {
+  position: relative;
+  border: 3px solid #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+span {
+  z-index: 999;
+  height: 3px;
+  margin: 1px;
+  width: 30px;
+  background: #000;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.scrollDown1 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+.scrollDown2 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+.scrollDown3 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+.scrollDown4 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 45%;
+  bottom: 54%;
+}
+
+.round:hover .scrollDown1 {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.round:hover .scrollDown2 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.round:hover .scrollDown3 {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.round:hover .scrollDown4 {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.scrollUp1 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 25%;
+  bottom: 35%;
+}
+
+.scrollUp2 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 45%;
+  bottom: 35%;
+}
+
+.scrollUp3 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: 25%;
+  bottom: 54%;
+}
+
+.scrollUp4 {
+  display: block;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  left: 45%;
+  bottom: 54%;
+}
+
+.round:hover .scrollUp1 {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.round:hover .scrollUp2 {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+.round:hover .scrollUp3 {
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+.round:hover .scrollUp4 {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+/*--------Projects--------*/
+.projects {
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+}
+
+.projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.projectElement {
+  width: 170px;
+  height: 220px;
+  margin: 0px 30px 0px 30px;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projectWords {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.projectType {
+  margin-top: 18px;
+}
+
+.projectName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+#projectElt1 {
+  border: 6px solid #F9A3FF;
+}
+
+#projectElt2 {
+  border: 6px solid #A0FF70;
+}
+
+#projectElt3 {
+  border: 6px solid #FFA2A2;
+}
+
+.line {
+  width: 130px;
+  height: 5px;
+}
+
+#line1 {
+  border-bottom: 2px solid #F9A3FF;
+}
+
+#line2 {
+  border-bottom: 2px solid #A0FF70;
+}
+
+#line3 {
+  border-bottom: 2px solid #FFA2A2;
+}
+
+#projectElt1 p {
+  color: #F9A3FF;
+}
+
+#projectElt2 p {
+  color: #A0FF70;
+}
+
+#projectElt3 p {
+  color: #FFA2A2;
+}
+
+#projectElt3 {
+  margin-bottom: -12px;
+}
+
+/*--------Contact--------*/
+.Contact {
+  text-align: center;
+  margin-top: 2.5%;
+  margin-bottom: 14%;
+}
+
+.contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.contactElement {
+  width: 150px;
+  height: 200px;
+  margin: 0px 30px 0px 30px;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contactResume {
+  border: 6px solid #81E2FF;
+}
+
+#contactLinkedIn {
+  border: 6px solid #FF8484;
+}
+
+#contactGitHub {
+  border: 6px solid #B999F8;
+}
+
+#contactEmail {
+  border: 6px solid #87F2C7;
+}
+
+#line4 {
+  border-bottom: 2px solid #81E2FF;
+  margin-top: 17px;
+}
+
+#line5 {
+  border-bottom: 2px solid #FF8484;
+  margin-top: 26px;
+}
+
+#line6 {
+  border-bottom: 2px solid #B999F8;
+  margin-top: 7px;
+}
+
+#line7 {
+  border-bottom: 2px solid #87F2C7;
+  margin-top: 27px;
+}
+
+#LinkedInColored {
+  width: 65px;
+  height: 65px;
+  margin-top: 10px;
+}
+
+#GitHubColored {
+  width: 100px;
+  height: 100px;
+  margin-top: -12px;
+}
+
+.contactWords {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+#contactResume p {
+  color: #81E2FF;
+  margin-top: 15px;
+}
+
+#contactLinkedIn p {
+  color: #FF8484;
+  margin-top: 20px;
+}
+
+#contactGitHub p {
+  color: #B999F8;
+  margin-top: 15px;
+}
+
+#contactEmail p {
+  color: #87F2C7;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 1020px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 30px;
+  }
+  .pageAnchors a {
+    display: None;
+  }
+  .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 60px;
+  }
+  #introWords {
+    width: 80vw;
+    margin-top: 30px;
+  }
+  #introHeading {
+    font-size: 50px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80vw;
+    text-align: center;
+  }
+  #introPara {
+    font-size: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80vw;
+    text-align: center;
+  }
+  #profilePic {
+    width: 200px;
+    height: 200px;
+  }
+  .projects {
+    margin-top: 120px;
+  }
+  .Contact {
+    margin-top: 120px;
+  }
+  .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .projectLinks a {
+    margin-top: 30px;
+  }
+  .contactLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .contactLinks a {
+    margin-top: 30px;
+  }
+  .scrollUp {
+    display: none;
+  }
+  .scrollDown {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
