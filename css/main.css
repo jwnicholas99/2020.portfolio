@@ -1,3 +1,9 @@
+:root {
+  --colorExperience: #1C74F6;
+  --colorProjects: #EB3838;
+  --colorSkills: #07E60B;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +20,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'UniSans';
+  src: url("../fonts/uni-sans.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-family: "OpenSans-Regular";
   font-weight: 100;
   font-size: 20px;
-  color: #707070;
   scroll-behavior: smooth;
 }
 
@@ -50,7 +62,7 @@ a {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #43aa8b;
+  background: #2a9d8f;
   z-index: -1;
 }
 
@@ -74,72 +86,95 @@ a {
   background: white;
   -webkit-clip-path: circle(100%);
           clip-path: circle(100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 35%;
+      grid-template-columns: 65% 35%;
 }
 
 /*--------Nav--------*/
+/* Color palette:
+#f94144
+#f3722c
+#f8961e
+#f9c74f
+#90be6d
+#43aa8b 
+#577590
+*/
 .nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 90%;
+      grid-template-rows: 10% 90%;
+}
+
+.pageAnchors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  background: turquoise;
+}
+
+.pageAnchor {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 80%;
+      grid-template-columns: 20% 80%;
+}
+
+.anchorIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.pageAnchor a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  padding-left: 5%;
+  font-family: "UniSans";
+  font-size: 8vh;
+  color: inherit;
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, #ebebeb), color-stop(50%, var(--colorTheme)));
+  background: linear-gradient(to left, #ebebeb 50%, var(--colorTheme) 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  -webkit-transition: all ease .3s;
+  transition: all ease .3s;
 }
 
-.pageAnchors .navIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.pageAnchor a:hover {
+  background-position: left bottom;
+  color: white;
 }
 
-.pageAnchors a {
-  margin-left: 15px;
-  margin-right: 15px;
+#anchorExperience {
+  background: var(--colorExperience);
+  color: var(--colorExperience);
+  --colorTheme: var(--colorExperience);
 }
 
-.navIcons {
-  text-align: right;
+#anchorProjects {
+  background: var(--colorProjects);
+  color: var(--colorProjects);
+  --colorTheme: var(--colorProjects);
 }
 
-#LinkedInLogo {
-  width: 50px;
-  height: 50px;
-}
-
-#GithubLogo {
-  width: 45px;
-  height: 45px;
+#anchorSkills {
+  background: var(--colorSkills);
+  color: var(--colorSkills);
+  --colorTheme: var(--colorSkills);
 }
 
 /*--------Intro--------*/
 .intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 90px;
+  background: white;
 }
 
 #introWords {
