@@ -4,152 +4,163 @@
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <!-- Top layer initially covering main content-->
-    <div class="background">
-    </div>
-    
-    <!-- Raindrop -->
-    <div id="raindrop"></div>
-
     <!-- main content at the top -->
-    <div class="main">
-        <div class="intro">
-            <div id="introWords">
-                <h1 id="introHeading">Hi, I'm Nicholas.</h1>
-                <p id="introPara">I'm a programmer and developer from Brown University.
-                    I have been exploring various coding projects from UI/UX
-                    to Python applications.
-                    Check them out below.
+    <header>
+        <div class="menu_toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        <nav class="top_nav">
+            <ul class="nav_list">
+                <li>
+                    <div class="nav_item_icon"></div>
+                    <a href="#about" class="nav_link">About</a>
+                </li>
+                <li>
+                    <div class="nav_item_icon"></div>
+                    <a href="#experience" class="nav_link">Experience</a>
+                </li>
+                <li>
+                    <div class="nav_item_icon"></div>
+                    <a href="#projects" class="nav_link">Projects</a>
+                </li>
+                <li>
+                    <div class="nav_item_icon""></div>
+                    <a href="#skills" class="nav_link">Skills</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="landing_text">
+            <h1>Nicholas Lim</h1>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <div class="about_details">
+                <div class="about_heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>
+                    Hey! I'm a software developer currently studying at Brown University, focusing on
+                    AI/ML and Systems. I've recently also gotten into playing with the Raspberry Pi4 
+                    and all its various applications. I also run an Instagram account where I post
+                    about my projects and coding notes. Take a look around!
                 </p>
             </div>
-            <img id="profilePic" src="images/profile.jpg">
         </div>
-        <div class="nav">
-            <div>Choose Your Fighter</div>
-            <div class="pageAnchors" id="topPage">
-                <div class="pageAnchor" id="anchorExperience">
-                    <div class="anchorIcon"></div>
-                    <a href="#topPage" id="anchorTextExperience">EXPERIENCE</a>
-                </div>
-                <div class="pageAnchor" id="anchorProjects">
-                    <div class="anchorIcon"></div>
-                    <a href="#section2" id="anchorTextProjects">PROJECTS</a>
-                </div>
-                <div class="pageAnchor" id="anchorSkills">
-                    <div class="anchorIcon""></div>
-                    <a href="#section3" id="anchorTextSkills">SKILLS</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="scrollDown">
-        <a href = "#section2">
-            <div class="round">
-                <span class="scrollDown1"></span>
-                <span class="scrollDown2"></span>
-                <span class="scrollDown3"></span>
-                <span class="scrollDown4"></span>
+    <section class="experience">
+        <div class="container">
+            <div class="section_heading">
+                <h1>Experience</h1>
+                <h6>Stuff I have done</h6>
             </div>
-        </a>
-    </div>
-    <div class="scrollUp" id="section2">
-        <a href = "#topPage">
-            <div class="round">
-                <span class="scrollUp1"></span>
-                <span class="scrollUp2"></span>
-                <span class="scrollUp3"></span>
-                <span class="scrollUp4"></span>
+
+            <button class="accordian_btn">GovTech - Software Engineering Intern</button>
+            <div class="accordian_panel">
+                <p>
+                    At the Data Science and Artificial Intelligence Division (DSAID),
+                    I built a data-preparation and training pipeline for Mobius.  
+                </p>
             </div>
-        </a>
-    </div>
-    <div class="projects">
-        <h2 class="sectionHeading">Projects</h2>
-        <div class="projectLinks">
-            <a target="_blank" href="https://jwnicholas99.github.io/">
-                <section class="projectElement" id="projectElt1">
-                    <p class="projectWords projectType">UI/UX</p>
-                    <img src="images/HTMLLogo.png">
-                    <div class="line" id="line1"></div>
-                    <div class="projectName">
-                        <p class="projectWords">HTML/CSS</p>
-                        <p class="projectWords projectLastElt">Website</p>
-                    </div>
-                </section>
-            </a>
-            <a target="_blank" href="https://jwnicholas99.wixsite.com/foodsearch">
-                <section class="projectElement" id="projectElt2">
-                    <p class="projectWords projectType">API/JavaScript</p>
-                    <img src="images/FoodSearchLogo.png">
-                    <div class="line" id="line2"></div>
-                    <div class="projectName">
-                        <p class="projectWords">FoodSearch</p>
-                        <p class="projectWords">Engine</p>
-                    </div>
-                </section>
-            </a>
-            <a target="_blank" href="https://github.com/jwnicholas99/TaxiApp" class="projectElement">
-                <section class="projectElement" id="projectElt3">
-                    <p class="projectWords projectType">App Development</p>
-                    <img src="images/TaxiDriverApp.png">
-                    <div class="line" id="line3"></div>
-                    <div class="projectName">
-                        <p class="projectWords">Taxi Driver</p>
-                        <p class="projectWords">App</p>
-                    </div>
-                </section>
-            </a>
+
+            <button class="accordian_btn">Intelligent Robot Lab - Undergraduate Researcher</button>
+            <div class="accordian_panel">
+                <p>
+                    We're working to solve Montezuma's Revenge!  
+                </p>
+            </div>
+
+            <button class="accordian_btn">InterSystems - Software Engineering Intern</button>
+            <div class="accordian_panel">
+                <p>
+                    I helped to speed up creation of DeepSee cubes by up to 6 times! 
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="scrollDown">
-        <a href = "#section3">
-            <div class="round">
-                <span class="scrollDown1"></span>
-                <span class="scrollDown2"></span>
-                <span class="scrollDown3"></span>
-                <span class="scrollDown4"></span>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <div class="section_heading">
+                <h1>Projects</h1>
+                <h6>Stuff I built</h6>
             </div>
-        </a>
-    </div>
-    <div class="scrollUp" id="section3">
-        <a href = "#section2">
-            <div class="round">
-                <span class="scrollUp1"></span>
-                <span class="scrollUp2"></span>
-                <span class="scrollUp3"></span>
-                <span class="scrollUp4"></span>
+
+            <button class="accordian_btn">rpi_rover - a rpi-powered rover that can track objects</button>
+            <div class="accordian_panel">
+                <p>
+                    Using the Raspberry Pi4 (2GB), I built a two-wheeled rover mounted with a 
+                    pan-tilt camera that can track objects. 
+                </p>
             </div>
-        </a>
-    </div>
-    <div class="Contact">
-        <h2 class="sectionHeading">Contact</h2>
-            <div class="contactLinks">
-                <a target="_blank" href="https://www.linkedin.com/in/jingweinicholaslim/">
-                    <section class="contactElement" id="contactLinkedIn">
-                        <img src="images/LinkedInColored.png" id="LinkedInColored">
-                        <div class="line" id="line5"></div>
-                        <p class="contactWords">LinkedIn</p>
-                    </section>
-                </a>
-                <a target="_blank" href="https://github.com/jwnicholas99">
-                    <section class="contactElement" id="contactGitHub">
-                        <img src="images/GitHubColored.png" id="GitHubColored">
-                        <div class="line" id="line6"></div>
-                        <p class="contactWords">GitHub</p>
-                    </section>
-                </a>
-                <a target="_blank" href="mailto:jwnicholas99@gmail.com">
-                    <section class="contactElement" id="contactEmail">
-                        <img src="images/Email.png">
-                        <div class="line" id="line7"></div>
-                        <p class="contactWords">Email</p>
-                    </section>
-                </a>
+
+            <button class="accordian_btn">Weenix - a wee little Unix</button>
+            <div class="accordian_panel">
+                <p>
+                    Built Weenix, a mini-Unix operating system, in the CSCI 1690 Operating Systems
+                    course at Brown. The project is split into 5 parts: Processes and Threads (Procs),
+                    Drivers, Virtual File System (VFS), System V File System (S5FS) and Virtual Memory (VM).
+                </p>
             </div>
-    </div>
+
+            <button class="accordian_btn">Diagnosis Clarity - a mood-tracking web application</button>
+            <div class="accordian_panel">
+                <p>
+                     Built a web application in Flask that allows psychiatric patients to easily record
+                     their moods and provides an additional channel for patient-psychiatrist communication
+                </p>
+            </div>
+
+            <button class="accordian_btn">TronRL - a AI for playing Tron</button>
+            <div class="accordian_panel">
+                <p>
+                     
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <div class="section_heading">
+                <h1>Skills</h1>
+                <h6>Stuff I can do</h6>
+            </div>
+
+            <button class="accordian_btn">Programming Languages</button>
+            <div class="accordian_panel">
+                <p>
+                    Python
+                    C
+                </p>
+            </div>
+
+            <button class="accordian_btn">Fields</button>
+            <div class="accordian_panel">
+                <p>
+                    AI/ML
+                    Systems
+                </p>
+            </div>
+
+            <button class="accordian_btn">Programming Modules</button>
+            <div class="accordian_panel">
+                <p>
+                    Kubernetes
+                    Docker
+                </p>
+            </div>
+        </div>
+    </section>
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
 

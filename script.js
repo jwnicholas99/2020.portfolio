@@ -1,5 +1,27 @@
-var tl = gsap.timeline()
+// Nav-list
+var menu_toggler = document.getElementsByClassName("menu_toggler");
+var top_nav = document.getElementsByClassName("top_nav");
 
-tl.from("#raindrop", {y:"-300", duration: 0.3})
-  .to("#raindrop", {height: 0, duration: 0.2})
-  .from(".main", {clipPath: "circle(0%)", duration: 1.5, ease:'Power1.easeInOut'}, "-=0.15")
+menu_toggler[0].onclick = function () {
+  this.classList.toggle('is_open');
+  top_nav[0].classList.toggle('is_open');
+}
+
+// Accordian
+var accordian_btns = document.getElementsByClassName("accordian_btn");
+
+for (var i = 0; i < accordian_btns.length; i++){
+  accordian_btns[i].onclick = function () {
+    this.classList.toggle('is_open');
+    var content = this.nextElementSibling;
+
+    if (content.style.maxHeight) {
+      // Accordian panel is open - need to close it
+      content.style.maxHeight = null;
+    } else {
+      // Accordian panel is closed - need to open it
+      content.style.maxHeight = content.scrollHeight + "px"
+    }
+  }
+}
+
