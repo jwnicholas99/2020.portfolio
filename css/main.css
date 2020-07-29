@@ -235,6 +235,37 @@ li {
           align-items: space-evenly;
 }
 
+svg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+.path {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  -webkit-animation: dash 25s linear infinite;
+          animation: dash 25s linear infinite;
+}
+
+@-webkit-keyframes dash {
+  from {
+    stroke-dashoffset: 3;
+  }
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 3;
+  }
+  to {
+    stroke-dashoffset: 1;
+  }
+}
+
 .line_two {
   display: -webkit-box;
   display: -ms-flexbox;
