@@ -75,7 +75,7 @@ section {
 
 /*Start reusable*/
 .container {
-    width: 70%;
+    width: 75%;
     margin: auto;
     padding: 0rem 2rem;
     border-left: 0.2rem solid transparent;
@@ -91,6 +91,7 @@ section:hover .container {
         width: 90%;
         padding: 0rem;
         margin: 0;
+        border-left: none;
     }
 }
 
@@ -325,7 +326,7 @@ header svg {
 }
 /*End header*/
 
-/*Start Sections*/
+/*Start General Sections*/
 
 section {
     font-size: 20px;
@@ -390,5 +391,5 @@ section:hover .section_heading span {
 section:hover .underline {
     border-bottom: solid var(--section_color);
 }
+/*End General Sections */
 
-/*End Section */
