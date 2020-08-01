@@ -39,6 +39,7 @@ html {
     font-size: 20px;
     font-family: 'Circular Std', sans-serif;
     color: #696969;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -54,6 +55,8 @@ a {
 p {
     font-size: 1rem;
     font-weight: 300;
+    line-height: 2;
+    padding: 1rem 0rem;
 }
 
 @media(max-width: 800px){
@@ -61,12 +64,34 @@ p {
         font-size: 1.5rem;
     }
 }
+
+section {
+    margin-top: -5vh;
+    width: 90%;
+}
+
+
 /*End global*/
 
 /*Start reusable*/
 .container {
-    width: 60%;
-    margin: 10% auto;
+    width: 70%;
+    margin: auto;
+    padding: 0rem 2rem;
+    border-left: 0.2rem solid transparent;
+    transition: border-left 0.2s linear;
+}
+
+section:hover .container {
+    border-left: 0.2rem solid var(--section_color);
+}
+
+@media(max-width: 800px){
+    .container {
+        width: 90%;
+        padding: 0rem;
+        margin: 0;
+    }
 }
 
 // Accordian
@@ -145,8 +170,7 @@ header {
 .icon_container {
     width: 5rem;
     height: 5rem;
-    border: 3px solid #ffe838;
-    background-color: #8ac926;
+    background-color: var(--section_color);
     margin-bottom: 3vh;
     display: flex;
     transform: rotate(45deg);
@@ -245,12 +269,25 @@ header {
     display: flex;
     flex-direction: column;
     align-items: space-evenly;
+    z-index: 10;
 }
 
-svg {
+header svg {
     width: 100%;
     height: 100vh;
     position: absolute;
+}
+
+
+@media(max-width: 800px){
+    header svg {
+        width: 170%;
+        height: 100vh;
+        position: absolute;
+        left: -70vw;
+        top: 10vh;
+        object-fit: cover;
+    }
 }
 
 .path {
@@ -288,5 +325,70 @@ svg {
 }
 /*End header*/
 
-/*Start Section Headers*/
-/*End Section Headers */
+/*Start Sections*/
+
+section {
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 5vh;
+}
+
+.about {
+    --section_color: #ff595e;
+}
+
+.experience {
+    --section_color: #8ac926;
+}
+
+.projects {
+    --section_color: #6a4c93;
+}
+
+.skills {
+    --section_color: orange;
+}
+
+.section_heading {
+    padding: 5vh 0vw;
+}
+
+.section_heading span {
+    font-size: 3vh;
+    font-weight: bold;
+    padding: 2vh 2vw;
+    border: 2px solid black;
+    letter-spacing: 0.3rem;
+    transition: box-shadow 0.2s linear, color 0.2s linear;
+}
+
+.underline {
+    transition: border-bottom 0.1s linear;
+}
+
+@media(max-width: 800px){
+    .section_heading span {
+        font-size: 4vh;
+        color: var(--section_color);    
+        box-shadow: 4px 4px var(--section_color);
+    }
+
+    .underline {
+        border-bottom: solid var(--section_color);
+    }
+
+    section p {
+        font-size: 2.5vh;
+    }
+}
+
+section:hover .section_heading span {
+    color: var(--section_color);
+    box-shadow: 4px 4px var(--section_color);
+}
+
+section:hover .underline {
+    border-bottom: solid var(--section_color);
+}
+
+/*End Section */

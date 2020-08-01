@@ -1,12 +1,19 @@
 // Nav-list
 var menu_toggler = document.getElementsByClassName("menu_toggler");
 var top_nav = document.getElementsByClassName("top_nav");
+var icons = document.getElementsByClassName("nav_link");
 
 menu_toggler[0].onclick = function () {
   this.classList.toggle('is_open');
   top_nav[0].classList.toggle('is_open');
 }
 
+for (var i = 0; i < icons.length; i++){
+  icons[i].onclick = function () {
+    menu_toggler[0].classList.toggle('is_open');
+    top_nav[0].classList.toggle('is_open');
+  }
+}
 
 // Accordian
 var accordian_btns = document.getElementsByClassName("accordian_btn");
