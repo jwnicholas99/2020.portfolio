@@ -6,6 +6,11 @@
 }
 
 @font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf")
+}
+
+@font-face {
     font-family: "Circular Std";
     src: url("../fonts/CircularStd/Regular/860c3ec7bbc5da3e97233ccecafe512e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
     url("../fonts/CircularStd/Regular/860c3ec7bbc5da3e97233ccecafe512e.woff2") format("woff2"), /* chrome、firefox */
@@ -53,6 +58,7 @@ a {
 }
 
 p {
+    font-family: "Open Sans";
     font-size: 1rem;
     font-weight: 300;
     line-height: 2;
@@ -99,38 +105,90 @@ section:hover .container {
 }
 
 // Accordian
+.accordian_panel {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.1s linear;
+    border: solid 0.1px #E5E5E5;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+
+.accordian_panel:hover, .accordian_panel.is_open {
+    border: solid 1px #E5E5E5;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.20);
+}
+
 .accordian_btn {
     width: 100%;
-    background-color: whitesmoke;
     border: none;
+    border-radius: 5px;
     outline: none;
+    font-size: 0.9rem;
     text-align: left;
     padding: 2vh;
+    background-color: white;
     cursor: pointer;
-    transition: background-color 0.2s linear;
+    transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.accordian_btn.is_open {
+    color: var(--section_color);
+}
+
+@media(max-width: 800px){
+    .accordian_btn {
+        font-size: 0.7rem;
+    }
 }
 
 .accordian_btn::after {
-    content: '\f055';
+    content: '\f0d7';
     font-family: "fontawesome";
     font-size: 14;
     float: right;
+    transition: transform 0.2s ease-in-out;
 }
 
 .accordian_btn.is_open::after {
-    content: '\f056';
+    transform: rotate(180deg);
+    color: var(--section_color);
 }
 
-.accordian_btn:hover, .accordian_btn.accordian_btn.is_open {
-    background-color: #ddd;
+.accordian_logo {
+    width: 7%;
+    float: left;
+    padding: 0.3rem;
+    margin-right: 0.5rem;
 }
 
-.accordian_panel {
+@media(max-width: 800px){
+    .accordian_logo {
+        width: 17vw;
+    }
+}
+
+.accordian_heading {
+    color: #696969;
+    font-family: "Open Sans";
+    font-size: 0.8rem;
+}
+
+@media(max-width: 800px){
+    .accordian_btn h3 {
+        font-size: 4vw;
+    }
+
+    .accordian_heading {
+        font-size: 3vw;
+    }
+}
+
+.accordian_content {
     padding: 0 2vh;
-    border: 1px solid whitesmoke;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
 }
 /*End reusable*/
 
@@ -317,7 +375,7 @@ header svg {
 #typewriter {
     background: #283538;
     color: white;
-    font-family: "Fira Mono";
+    font-family: "Droid Sans Mono";
     margin: 0 0.5rem;
     border-right: 0.3rem solid turquoise;
     animation: cursor_blink 1s step-end infinite;
@@ -333,7 +391,6 @@ header svg {
 
 section {
     font-size: 20px;
-    font-weight: lighter;
     margin: 5vh;
 }
 
@@ -358,7 +415,7 @@ section {
 }
 
 .section_heading span {
-    font-size: 3vh;
+    font-size: 3.3vh;
     font-weight: bold;
     padding: 2vh 2vw;
     border: 2px solid black;
