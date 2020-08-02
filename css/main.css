@@ -121,7 +121,8 @@ section:hover .container {
   border: none;
   border-radius: 5px;
   outline: none;
-  font-size: 0.9rem;
+  font-size: 1.0rem;
+  font-weight: bold;
   text-align: left;
   padding: 2vh;
   background-color: white;
@@ -588,5 +589,11 @@ section:hover .underline {
 
 /*End Experience Sections*/
 /*Start Projects Sections*/
+.demo_img {
+  height: 40vh;
+  display: block;
+  margin: auto;
+}
+
 /*End Projects Sections*/
 /*# sourceMappingURL=main.css.map */
