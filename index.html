@@ -90,8 +90,24 @@
                 </button>
                 <div class="accordian_content">
                     <p>
-                        At the Data Science and Artificial Intelligence Division (DSAID),
-                        I built a data-preparation and training pipeline for Mobius.  
+                        Worked in the Video Analytics team at the Data Science and Artificial Intelligence 
+                        Division (DSAID).
+                    </p>
+                    <p>
+                        Built data-preparation and training pipeline in Python for 
+                        object detection. Utilized DVR-Scan and OpenCV to analyse 1hr raw videos 
+                        in 3-4 mins. Developed scripts to efficiently annotate frames using 
+                        YOLOv3. Built Nvidia-based Docker images to run pipeline on 
+                        Kubeflow to utilize cloud GPU and log through Mlflow. Automated hyperparameter 
+                        tuning with Bayesian optimization through Hyperopt module.
+                    </p>
+                    <p>
+                        <span class="prog_lang">Python</span>
+                        <span class="prog_lang">Docker</span>
+                        <span class="prog_lang">Kubeflow</span>
+                        <span class="prog_lang">Mlflow</span>
+                        <span class="prog_lang">AWS</span>
+                        <span class="prog_lang">Powershell</span>
                     </p>
                 </div>
             </div>
@@ -100,12 +116,28 @@
                 <button class="accordian_btn">
                     <img src="images/irl_logo.png" class="accordian_logo">
                     <h3>Intelligent Robot Lab</h3> 
-                    <span class="accordian_heading"> &lt; Undergraduate Researcher &gt;</span><br>
+                    <span class="accordian_heading"> &lt; Researcher &gt;</span><br>
                     <span class="accordian_heading"> # Aug 2019 - Present</span>
                 </button>
                 <div class="accordian_content">
                     <p>
-                        We're working to solve Montezuma's Revenge!  
+                        Engaged in reinforcement learning research at Intelligent Research Lab (IRL)
+                        in Brown University.
+                    </p>
+                    <p>
+                        Team is currently working on allowing agents to discover skills for 
+                        exploration and planning using deep skill graphs (DSG). DSG reduces large continuous 
+                        Markov Decision Processes (MDPs) into small discrete ones.
+                    </p>
+                    <p>
+                        Publications: 
+                        <ul>
+                            <li>
+                                <a href="https://openreview.net/pdf?id=-mvAo5hWNp" target="_blank" class="underline">
+                                    Skill Discovery for Exploration and Planning using Deep Skill Graphs
+                                </a>
+                            </li>
+                        </ul>
                     </p>
                 </div>
             </div>
@@ -119,7 +151,51 @@
                 </button>
                 <div class="accordian_content">
                     <p>
-                        I helped to speed up creation of DeepSee cubes by up to 6 times! 
+                        InterSystems is a vendor of software systems and technology for high-performance 
+                        database-management and rapid application development.
+                    </p>
+                    <p>
+                        Implemented the DataQuality framework for health records using DeepSee cubes to 
+                        identify missing or malformed data. Automated the creation of DataQuality DeepSee 
+                        cubes to reduce creation time 6-fold. Investigated feasibility of using DeepSee 
+                        REST API with third-party data visualization tools such as PowerBI and Tableau.
+                        Worked in the HealthShare Health Insight team, participated in various Sprints and 
+                        learnt to use Perforce and JIRA.
+                    </p>
+                    <p>
+                        <span class="prog_lang">ObjectScript</span>
+                        <span class="prog_lang">SQL</span>
+                        <span class="prog_lang">JavaScript</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="accordian_panel">
+                <button class="accordian_btn">
+                    <img src="images/astar_logo.png" class="accordian_logo"> 
+                    <h3>A*STAR</h3> 
+                    <span class="accordian_heading"> &lt; Researcher &gt;</span><br>
+                    <span class="accordian_heading"> #  Mar 2016 - May 2017</span>
+                </button>
+                <div class="accordian_content">
+                    <p>
+                        Engaged in brain-computer interface research at the Institute for Infocomm Research (I2R). Scalp 
+                        brain signals measured using Electroencephalogram (EEG) exhibit attributes when a person experiences a range of emotions. We performed experiments to see how a person responds to 
+                        effective audiovisual stimuli.
+                    </p>
+                    <p>
+                        Developed program in C# and built GUI in HTML to run the experiments, displaying images and playing audio clips at regular intervals. Integrated EEG collection from subjects with A*STAR's trained AI model. 
+                    </p>
+                    <p>
+                        Publications: 
+                        <a href="https://oar.a-star.edu.sg/jspui/bitstream/123456789/2300/1/IRC-SET_2017_paper_S6-2.pdf" target="_blank" class="underline">
+                        A Brain-Computer Interface to Detect Responses to Affective Audiovisual Stimuli from Electroencephalogram 
+                        </a>
+                        <a href="https://github.com/jwnicholas99/Brain-Computer-Interface-for-Detection-of-Emotions" target="_blank" class="code_link">[code]</a>
+                    </p>
+                    <p>
+                        <span class="prog_lang">C#</span>
+                        <span class="prog_lang">HTML</span>
                     </p>
                 </div>
             </div>
@@ -133,17 +209,34 @@
             </div>
 
             <div class="accordian_panel">
-                <button class="accordian_btn">rpi_rover - a rpi-powered rover that can track objects</button>
+                <button class="accordian_btn">
+                    rpi_rover 
+                    <span class="accordian_heading">- a rpi-powered rover capable of object tracking</span>
+                </button>
                 <div class="accordian_content">
+                    <img src="images/rpi_demo.gif" class="demo_img">
                     <p>
                         Using the Raspberry Pi4 (2GB), I built a two-wheeled rover mounted with a 
-                        pan-tilt camera that can track objects. 
+                        pan-tilt camera that can track objects. In order to work with the rpi's 
+                        relatively weak CPU, I used Tensorflow Lite and Mobilenet-Single Shot Detection (SSD), a
+                        lightweight model with decent performance. To control the pan-tilt camera, I used two
+                        tuned Proportional Integral Derivative (PID) processes to control two servo motors.
+                    </p>
+                    <p>
+                        <span class="prog_lang">Python</span>
+                        <span class="prog_lang">Tflite</span>
+                        <span class="prog_lang">RPi</span>
+                        <span class="prog_lang">PiGPIO</span>
+                        <a href="https://github.com/jwnicholas99/rpi_rover" target="_blank" class="code_link">[code]</a>
                     </p>
                 </div>
             </div>
 
             <div class="accordian_panel">
-                <button class="accordian_btn">Weenix - a wee little Unix</button>
+                <button class="accordian_btn">
+                    Weenix
+                    <span class="accordian_heading">- a wee little Unix</span>
+                </button>
                 <div class="accordian_content">
                     <p>
                         Built Weenix, a mini-Unix operating system, in the CSCI 1690 Operating Systems
@@ -154,7 +247,10 @@
             </div>
 
             <div class="accordian_panel">
-                <button class="accordian_btn">Diagnosis Clarity - a mood-tracking web application</button>
+                <button class="accordian_btn">
+                    Diagnosis Clarity
+                    <span class="accordian_heading">- a mood-tracking web application</span>
+                </button>
                 <div class="accordian_content">
                     <p>
                         Built a web application in Flask that allows psychiatric patients to easily record
@@ -164,7 +260,10 @@
             </div>
 
             <div class="accordian_panel">
-                <button class="accordian_btn">TronRL - a AI for playing Tron</button>
+                <button class="accordian_btn">
+                    TronRL
+                    <span class="accordian_heading">- an AI for playing Tron</span>
+                </button>
                 <div class="accordian_content">
                     <p>
                         

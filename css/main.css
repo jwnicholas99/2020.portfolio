@@ -178,10 +178,10 @@ section:hover .container {
 
 @media (max-width: 800px) {
   .accordian_btn h3 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .accordian_heading {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 }
 
@@ -191,6 +191,38 @@ section:hover .container {
   overflow: hidden;
   -webkit-transition: max-height 0.4s ease-in-out;
   transition: max-height 0.4s ease-in-out;
+}
+
+.accordian_content p {
+  font-size: 0.8rem;
+  padding: 1vh 1vh;
+  margin-bottom: 1vh;
+}
+
+@media (max-width: 800px) {
+  .accordian_content p {
+    font-size: 4vw;
+  }
+}
+
+.prog_lang {
+  border: solid 1px;
+  border-radius: 5px;
+  padding: 0.2vw;
+  background-color: var(--section_color);
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .prog_lang {
+    padding: 0.5vh 1vw;
+  }
+}
+
+.code_link {
+  color: var(--section_color);
+  font-size: 0.8rem;
+  text-align: right;
 }
 
 /*End reusable*/
@@ -535,4 +567,26 @@ section:hover .underline {
 }
 
 /*End General Sections */
+/*Start Experience Sections*/
+.accordian_content li {
+  list-style-type: square;
+  line-height: 2;
+  font-size: 0.8rem;
+  margin-left: 2vw;
+  margin-bottom: 1vh;
+}
+
+@media (max-width: 800px) {
+  .accordian_content li {
+    list-style-type: square;
+    line-height: 2;
+    font-size: 2.3vh;
+    margin-left: 10vw;
+    margin-bottom: 1vh;
+  }
+}
+
+/*End Experience Sections*/
+/*Start Projects Sections*/
+/*End Projects Sections*/
 /*# sourceMappingURL=main.css.map */
