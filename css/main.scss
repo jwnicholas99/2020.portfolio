@@ -65,7 +65,7 @@ p {
     padding: 1rem 0rem;
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     h1 {
         font-size: 1.5rem;
     }
@@ -91,11 +91,22 @@ section:hover .container {
     border-left: 0.2rem solid var(--section_color);
 }
 
-@media(max-width: 800px){
+@media(max-width: 500px){
     .container {
         width: 90%;
         padding: 0rem;
         margin: 0;
+    }
+
+    section:hover .container {
+        border-left: 0.2rem solid transparent;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 850px){
+    .container {
+        width: 90%;
+        padding: 0rem;
     }
 
     section:hover .container {
@@ -136,7 +147,7 @@ section:hover .container {
     color: var(--section_color);
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .accordian_btn {
         font-size: 0.7rem;
     }
@@ -157,6 +168,7 @@ section:hover .container {
 
 .accordian_logo {
     width: 7%;
+    min-width: 70px;
     float: left;
     padding: 0.3rem;
     margin-right: 0.5rem;
@@ -164,7 +176,8 @@ section:hover .container {
 
 @media(max-width: 800px){
     .accordian_logo {
-        width: 17vw;
+        width: 8vh;
+        min-width: 50px;
     }
 }
 
@@ -174,13 +187,13 @@ section:hover .container {
     font-size: 0.8rem;
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .accordian_btn h3 {
-        font-size: 5vw;
+        font-size: 0.9rem;
     }
 
     .accordian_heading {
-        font-size: 3.5vw;
+        font-size: 0.75rem;
     }
 }
 
@@ -197,12 +210,6 @@ section:hover .container {
     margin-bottom: 1vh;
 }
 
-@media(max-width: 800px){
-    .accordian_content p {
-        font-size: 4vw;
-    }
-}
-
 .prog_lang {
     border: solid 1px;
     border-radius: 5px;
@@ -211,9 +218,10 @@ section:hover .container {
     color: white;
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .prog_lang {
         padding: 0.5vh 1vw;
+        line-height: 1.7rem;
     }
 }
 
@@ -278,14 +286,16 @@ header {
     transform: rotate(-45deg);
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .icon_container {
         width: 20vw;
         height: 20vw;
+        max-width: 80px;
+        max-height: 80px;
     }
 
     .icon_container i {
-        font-size: 12vw;
+        font-size: 2rem;
     }
 
     .nav_list {
@@ -373,12 +383,23 @@ header svg {
 }
 
 
-@media(max-width: 800px){
+@media(max-width: 500px){
     header svg {
         width: 170%;
         height: 100vh;
         position: absolute;
         left: -70vw;
+        top: 10vh;
+        object-fit: cover;
+    }
+}
+
+@media(min-width: 500px) and (max-width: 850px){
+    header svg {
+        width: 130%;
+        height: 100vh;
+        position: absolute;
+        left: -30vw;
         top: 10vh;
         object-fit: cover;
     }
@@ -444,6 +465,7 @@ section {
 
 .section_heading {
     padding: 5vh 0vw;
+    margin-bottom: 2vh;
 }
 
 .section_heading span {
@@ -459,9 +481,9 @@ section {
     transition: border-bottom 0.1s linear;
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .section_heading span {
-        font-size: 4vh;
+        font-size: 1.5rem;
         color: var(--section_color);    
         box-shadow: 4px 4px var(--section_color);
     }
@@ -471,7 +493,7 @@ section {
     }
 
     section p {
-        font-size: 2.5vh;
+        font-size: 0.8rem;
     }
 }
 
@@ -485,7 +507,7 @@ section:hover .underline {
 }
 /*End General Sections */
 
-/*Start Experience Sections*/
+/*Start Experience Section*/
 .accordian_content li {
     list-style-type: square;
     line-height: 2;
@@ -494,7 +516,7 @@ section:hover .underline {
     margin-bottom: 1vh;
 }
 
-@media(max-width: 800px){
+@media(max-width: 850px){
     .accordian_content li {
         list-style-type: square;
         line-height: 2;
@@ -503,12 +525,47 @@ section:hover .underline {
         margin-bottom: 1vh;
     }
 }
-/*End Experience Sections*/
+/*End Experience Section*/
 
-/*Start Projects Sections*/
+/*Start Projects Section*/
 .demo_img {
     height: 40vh;
     display: block;
     margin: auto;
 }
-/*End Projects Sections*/
+
+@media(max-width: 850px){
+    .demo_img {
+        width: 40vw;
+        height: auto;
+    }
+}
+/*End Projects Section*/
+
+/*Start Skills Section*/
+.skills_bar {
+    width: 95%;
+    margin: 2vh 1.5vw;
+    border-radius: 4px;
+    background: whitesmoke;
+}
+
+.skills_progress_bar {
+    height: 100%;
+    background: orange;
+    padding: 1.5vh 1vw;
+    border-radius: 4px 0px 0px 4px;
+    font-family: "Fira Mono";
+    font-size: 0.9rem;
+    color: white;
+}
+
+@media(max-width: 850px){
+    .skills_progress_bar {
+        padding: 1vh 3vw;
+        font-family: "Fira Mono";
+        font-size: 0.7rem;
+        color: white;
+    }
+}
+/*End Skills Section*/
