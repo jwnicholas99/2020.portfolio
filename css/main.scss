@@ -185,6 +185,7 @@ section:hover .container {
     color: #696969;
     font-family: "Open Sans";
     font-size: 0.8rem;
+    font-weight: 300;
 }
 
 @media(max-width: 850px){
@@ -205,9 +206,15 @@ section:hover .container {
 }
 
 .accordian_content p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 1vh 1vh;
     margin-bottom: 1vh;
+}
+
+@media(max-width: 850px){
+    .accordian_content p {
+        font-size: 0.8rem;
+    }
 }
 
 .prog_lang {
@@ -569,3 +576,26 @@ section:hover .underline {
     }
 }
 /*End Skills Section*/
+
+/*Start Footer Section*/
+.footer {
+    width: 100%;
+    margin-top: 5vh;
+    padding: 2.5vh;
+    text-align: center;
+}
+
+.footer h5 {
+    font-family: "Open Sans";
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    font-family: "Droid Sans Mono";
+}
+
+.footer a {
+    padding: 0.5vw;
+}
+/*End Footer Section*/
