@@ -447,7 +447,7 @@ header svg {
     left: -70vw;
     top: 10vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -459,7 +459,7 @@ header svg {
     left: -30vw;
     top: 10vh;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -467,7 +467,7 @@ header svg {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
   -webkit-animation: dash 25s linear infinite;
-          animation: dash 25s linear infinite;
+  animation: dash 25s linear infinite;
 }
 
 @-webkit-keyframes dash {
@@ -505,7 +505,7 @@ header svg {
   margin: 0 0.5rem;
   border-right: 0.3rem solid turquoise;
   -webkit-animation: cursor_blink 1s step-end infinite;
-          animation: cursor_blink 1s step-end infinite;
+  animation: cursor_blink 1s step-end infinite;
 }
 
 @-webkit-keyframes cursor_blink {

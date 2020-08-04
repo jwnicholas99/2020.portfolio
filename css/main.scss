@@ -397,7 +397,8 @@ header svg {
         position: absolute;
         left: -70vw;
         top: 10vh;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 }
 
@@ -408,14 +409,25 @@ header svg {
         position: absolute;
         left: -30vw;
         top: 10vh;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
 }
 
 .path {
     stroke-dasharray: 1;
     stroke-dashoffset: 1;
-    animation: dash 25s linear infinite;
+    -webkit-animation: dash 25s linear infinite;
+            animation: dash 25s linear infinite;
+  }
+  
+@-webkit-keyframes dash {
+    from {
+      stroke-dashoffset: 3;
+    }
+    to {
+      stroke-dashoffset: 1;
+    }
   }
   
 @keyframes dash {
@@ -438,7 +450,13 @@ header svg {
     font-family: "Droid Sans Mono";
     margin: 0 0.5rem;
     border-right: 0.3rem solid turquoise;
-    animation: cursor_blink 1s step-end infinite;
+    -webkit-animation: cursor_blink 1s step-end infinite;
+            animation: cursor_blink 1s step-end infinite;
+}
+
+@-webkit-keyframes cursor_blink {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
 }
 
 @keyframes cursor_blink {
