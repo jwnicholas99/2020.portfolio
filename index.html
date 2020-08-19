@@ -234,10 +234,34 @@
             <div class="section_heading">
                 <span>PROJECTS</span>
             </div>
+            <div class="accordian_panel">
+                <button class="accordian_btn">
+                    RPi RGB LED 
+                    <span class="accordian_heading">- a GUI app to easily control a RGB LED strip</span>
+                </button>
+                <div class="accordian_content">
+                    <img src="images/rgb_demo.gif" class="demo_img">
+                    <p>
+                        While playing around with a SK6812 LED strip, I realised that while the rpi-ws281x module handled
+                        the low-level stuff, it was still really tedious to create your own LED patterns. Furthermore,
+                        it was really hard to visualize how the LED pattern would look like. Hence, I created a Python
+                        class on top of the rpi-ws281x module to easily control the LED strip with just a few functions.
+                        I also created a GUI app which would immediately sent commands to the LED strip, providing instant
+                        feedback on your LED pattern. Lastly, there is an option to construct your own sequences by chaining
+                        LED patterns together.
+                    </p>
+                    <p>
+                        <span class="prog_lang">Python</span>
+                        <span class="prog_lang">Tkinter</span>
+                        <span class="prog_lang">RPi</span>
+                        <a href="https://github.com/jwnicholas99/rpi-rgb-led" target="_blank" class="code_link">[code]</a>
+                    </p>
+                </div>
+            </div>
 
             <div class="accordian_panel">
                 <button class="accordian_btn">
-                    Rpi_rover 
+                    RPi Rover 
                     <span class="accordian_heading">- a rpi-powered rover capable of object tracking</span>
                 </button>
                 <div class="accordian_content">
