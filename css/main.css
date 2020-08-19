@@ -633,7 +633,7 @@ section:hover .underline {
 
 @media (max-width: 850px) {
   .demo_img {
-    width: 40vw;
+    width: 70vw;
     height: auto;
   }
 }
