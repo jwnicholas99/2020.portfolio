@@ -227,8 +227,8 @@ section:hover .container {
 }
 
 .prog_lang {
-  border: solid 1px;
-  border-radius: 5px;
+  border: solid 0px;
+  border-radius: 3px;
   padding: 0.2vw;
   background-color: var(--section_color);
   color: white;
